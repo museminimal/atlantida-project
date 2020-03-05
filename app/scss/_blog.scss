@@ -1,0 +1,105 @@
+.blog {
+  padding: 85px 0 0;
+  background: $background;
+}
+
+.blog__title-container {
+  text-align: center;
+}
+
+.blog__text-inner {
+  margin: 40px 0 75px;
+}
+
+.blog-gallery__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  flex-basis: 25%;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-item_2 {
+  background: $blocks-color--darker;
+}
+
+.gallery-item_4 {
+  background: $blog-block-4--color;
+}
+
+.gallery-item_5 {
+  background: $blog-block-5--color;
+}
+
+.gallery-item_7 {
+  background: $blog-bg-color;
+}
+
+.gallery-date {
+  padding-bottom: 12px;
+  font-family: $italic-font;
+  font-size: 15px;
+  line-height: 18px;
+  color: $background;
+  position: relative;
+  margin: 0;
+}
+
+.gallery-date::after {
+  content: '';
+  display: block;
+  width: 150px;
+  height: 1px;
+  background: $blog-pseudo--color;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.gallery-date_5::after {
+  content: '';
+  display: block;
+  width: 150px;
+  height: 1px;
+  background: $blog-block-5-pseudo--color;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.gallery-item_2, .gallery-item_4,
+.gallery-item_5, .gallery-item_7 {
+  padding: 50px 40px 75px;
+}
+
+.gallery-title-container {
+  margin: 20px 0 35px;
+}
+
+.gallery-title {
+  padding-left: 15px;
+  position: relative;
+  transition: all .3s ease;
+}
+
+.gallery-title:hover {
+  padding-left: 20px;
+}
+
+.gallery-title::before {
+  content: '';
+  display: block;
+  background: url('../img/blog/blog-arrow.png')no-repeat center / cover;
+  top: 6px;
+  left: 0;
+  position: absolute;
+  width: 4px;
+  height: 7px;
+}

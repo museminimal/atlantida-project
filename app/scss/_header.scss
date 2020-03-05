@@ -1,0 +1,85 @@
+.header {
+  background-color: $blocks-color;
+  padding: 18px 0;
+  position: relative;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo-wrap {
+ display: flex;
+ align-items: center;
+}
+
+.logo__name {
+  text-transform: uppercase;
+  font-family: $secondary-font;
+  font-size: 18px;
+  line-height: 50px;
+  letter-spacing: 1.8px;
+  padding: 8px 0 0 53px;
+  position: relative;
+  transition: all .3s ease;
+}
+
+.logo__name::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../img/logos/header-logo.png") no-repeat center / cover;
+}
+
+.logo__name_color_dark {
+  color: $logo-name--color;
+}
+
+.nav__nav-link, .mobile-menu__link {
+  display: block;
+  color: $nav-link-color;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 50px;
+  padding: 0 10px;
+  transition: all .3s ease;
+}
+
+.mobile-menu__link_bg {
+  background: aqua;
+}
+
+.links__hover:hover {
+ @include links-hover;
+  text-shadow: 2px 1px 2px #515A59;
+}
+
+.social {
+  font-size: 13px;
+  color: $fa-icons--color;
+  padding-right: 10px;
+  position: relative;
+  transition: all .3s ease;
+}
+
+.social:not(:last-child)::after  {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 10px;
+  background: $fa-icons--color;
+  top: 2px;
+  right: 3px;
+}
+
+
+
+
+

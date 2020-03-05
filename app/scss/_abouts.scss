@@ -1,0 +1,90 @@
+.abouts {
+  background: $background;
+  padding-top: 75px;
+}
+
+.abouts__description {
+  background: $blocks-color;
+  padding-bottom: 50px;
+}
+
+.abouts__image {
+  margin-bottom: 60px;
+}
+
+.abouts__text-inner {
+  max-width: 1026px;
+  margin: 40px auto 45px;
+}
+
+.abouts__button-inner {
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.abouts .row {
+  padding: 40px 0 75px;
+}
+
+.about-tag {
+  text-align: center;
+  max-width: 100px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 45px;
+}
+
+.about-tag__title {
+  margin-top: 20px;
+}
+
+.about-tag::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.about-tag-wrap:not(:last-child)::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 168px;
+  top: 5px;
+  right: 0;
+  background: $about-after--color;
+}
+
+.about-tag_1::before {
+  width: 38px;
+  height: 41px;
+  background: url("../img/about/about-us_icon-1.png") no-repeat center / contain;
+}
+
+.about-tag_2::before {
+  width: 41px;
+  height: 40px;
+  background: url("../img/about/about-us_icon-2.png") no-repeat center / contain;
+}
+
+.about-tag_3::before {
+  width: 33px;
+  height: 39px;
+  background: url("../img/about/about-us_icon-3.png") no-repeat center / contain;
+}
+
+.about-tag_4::before {
+  width: 37px;
+  height: 41px;
+  background: url("../img/about/about-us_icon-4.png") no-repeat center / contain;
+}
+
+.about-tag__title {
+  max-width: 91px;
+  margin: 20px auto;
+}
+

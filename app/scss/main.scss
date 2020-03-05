@@ -1,0 +1,261 @@
+@import "libs";
+
+//////////BUTTONS//////////
+
+.button {
+  background: transparent;
+  border: 2px solid;
+  letter-spacing: 1.5px;
+  font-size: 13px;
+  font-family: $secondary-font;
+  transition: all .3s ease;
+}
+
+.button_sz_bigger {
+  padding: 12px 30px;
+}
+
+.button_sz_bigger::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 50px;
+  color: $blocks-color;
+  top: 37px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: url("../img/promo/button-arrow.png") no-repeat center / cover;
+}
+
+.button_sz_smaller {
+  padding: 8px 22px;
+}
+
+.button_border_white:hover {
+  background: $blocks-color--darker;
+}
+
+.button_border_dark {
+  border-color: $text--main-color;
+  color: $text--main-color;
+}
+
+.button_border_dark:hover {
+  background: $text--main-color;
+  color: $btn-contact-us-text--color;
+}
+
+.button_bg_dark:hover {
+  background: $blocks-color;
+  color: $blocks-color--darker;
+}
+
+.button_border_white {
+  border-color: $btn-border-white--color;
+  color: $btn-border-white--color;
+  position: relative;
+}
+
+.button_border_dark {
+  border-color: $text--main-color;
+  color: $text--main-color;
+}
+
+.button_bg_dark {
+  background: $text--main-color;
+  border-color: $text--main-color;
+  color: $btn-contact-us-text--color;
+}
+
+.button_bg_gray {
+  background: $form-border--color;
+  border: $form-border--color;
+  color: $background;
+  padding: 10px 39px;
+}
+
+//////////TITLES//////////
+
+.title__wrap {
+  text-align: center;
+}
+.title {
+  font-family: $title-font;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 0.44px;
+}
+
+.title_sz_big {
+  font-size: 36px;
+  letter-spacing: 5px;
+  position: relative;
+  padding: 50px 0;
+  max-width: 520px;
+  margin: 0 auto;
+  color: $blocks-color;
+}
+
+.title_sz_big::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 516px;
+  height: 25px;
+  color: white;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  background: url("../img/promo/line.png") no-repeat center / cover;
+}
+
+.title_sz_big::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 516px;
+  height: 25px;
+  color: white;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  background: url("../img/promo/line.png") no-repeat center / cover;
+}
+
+.title_sz_small {
+  padding-bottom: 30px;
+}
+
+.title_color_white::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 168px;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: url("../img/services/line-light.png") no-repeat center / cover;
+}
+
+.title_color_white {
+  color: $blocks-color;
+  position: relative;
+}
+
+
+.title_color_dark {
+  color: $text--main-color;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.title_color_dark::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 168px;
+  height: 5px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  background: url("../img/common/single-line.png") no-repeat center / cover;
+}
+
+
+.title_sz_small::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 168px;
+  height: 5px;
+  bottom: 0;
+  left: 9px;
+}
+
+.subtitle {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 50px;
+  letter-spacing: 1.4px;
+  margin: 0;
+  text-align: center;
+}
+
+.subtitle_color_white {
+  color: $blocks-color;
+}
+
+.main__text {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 1.4px;
+  text-align: center;
+  margin: 0;
+}
+
+.main__text_light {
+  color: $text--secondary-color;
+}
+
+.main__text_dark {
+  color: $text--main-color;
+}
+
+.main__text_gray {
+  color: $blog-text--color;
+  text-align: left;
+  font-size: 16px;
+}
+
+.blocks__heading {
+  font-family: $secondary-font;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.47px;
+  margin: 0;
+}
+.main__text_sm {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+.blocks__heading_color_dark {
+  color: $text--main-color;
+}
+
+.blocks__heading_color_light {
+  color: $text--secondary-color;
+}
+
+.blocks__heading_color_lighter {
+  color: $background;
+}
+
+.amount {
+  color: $text--main-color;
+  font-family: $bold-font;
+  font-size: 50px;
+  display: block;
+  text-align: center;
+}
+
+.amount_lh_big {
+  margin: 40px 0;
+}
+
+.logo__name_color_light {
+  color: $blocks-color;
+}
+
+@import "media";
+

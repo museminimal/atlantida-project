@@ -1,0 +1,49 @@
+.banner {
+  background: url('../img/promo/promo.jpg')  no-repeat center / cover;
+  padding: 200px 0 160px;
+}
+
+.banner__button-inner {
+ max-width: 160px;
+  margin: 40px auto 0;
+  padding-bottom: 50px;
+}
+
+.banner__slider {
+  position: relative;
+
+  .slick-slide {
+    outline: none;
+  }
+
+  .slick-prev,
+  .slick-next {
+    border: none;
+    outline: none;
+    height: 0;
+    font-size: 0;
+    position: absolute;
+    top: 40%;
+
+    &::before {
+      content: '';
+      background: url('../img/promo/arrow.png') no-repeat center/contain;
+      width: 35px;
+      height: 35px;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .slick-prev { left: -35px; }
+  .slick-next {
+    right: 0;
+
+    &::before {
+      transform: rotateY(180deg);
+    }
+  }
+}
+

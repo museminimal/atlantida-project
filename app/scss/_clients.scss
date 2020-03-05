@@ -1,0 +1,38 @@
+.clients {
+  padding: 80px 0 85px;
+  background: $blocks-color;
+}
+
+.clients__title-container {
+  text-align: center;
+}
+
+.clients__text-inner {
+  margin-top: 40px;
+}
+
+.client-logo-wrap {
+  flex-basis: 20%;
+  max-height: 102px;
+  text-align: center;
+}
+
+.client-logo-wrap a {
+  display: block;
+}
+
+.client-logo-wrap:hover {
+    -webkit-animation: swing 0.6s ease;
+    animation: swing 0.6s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.clients__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+
